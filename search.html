@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>零食-商品搜索-京东</title>
+		<link rel="shotcut icon" href="images/list/lphicon.ico">
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/search.css" />
+		<link rel="stylesheet" href="css/usuallytop.css">
+		<link rel="stylesheet" href="css/bottom.css">
+
+	</head>
+
+	<body>
+		<!--顶部公共部分-->
+		<div id="header"></div>
+		<script type="text/javascript">
+			$("#header").load("usuallytop.html");
+		</script>
+
+		<!--顶部定位-->
+		<a href="#" name="top"></a>
+
+		<!--搜索栏-->
+		<div class="header">
+			<div class="logo"></div>
+			<div class="search">
+				<div class="form">
+					<input type="text" class="searchkey" value="零食大礼包" />
+					<span class="searchlogo"></span>
+					<button class="searchbutton">搜索</button>
+				</div>
+			</div>
+			<div class="dropdown">
+				<div class="dropdowncar">
+					<a class="mycar">我的购物车</a>
+					<i class="fa fa-shopping-cart" style="font-size: 16px;color: #f30213;"></i>
+					<span class="shopping-amount">0</span>
+				</div>
+				<div class="show">
+					<div class="content">
+						<div class="img"></div>
+						<div class="word">购物车中还没有商品，赶紧选购吧！</div>
+					</div>
+				</div>
+				<div class="line"></div>
+			</div>
+			<div class="list">
+				<ul>
+					<li>零食大礼包</li><b>|</b>
+					<li>自营零食</li><b>|</b>
+					<li>饼干</li><b>|</b>
+					<li>面包</li><b>|</b>
+					<li>薯片</li><b>|</b>
+					<li>牛肉干</li><b>|</b>
+					<li>方便面</li><b>|</b>
+					<li>饮料</li><b>|</b>
+					<li>辣条</li><b>|</b>
+				</ul>
+			</div>
+		</div>
+
+		<!--商品分类-->
+		<div class="type-top">
+			<div class="inner">
+				<ul>
+					<li id="allgoods">全部商品分类</li>
+					<li>京东时尚</li>
+					<li>美妆馆</li>
+					<li>超市</li>
+					<li>生鲜</li>
+					<li>京东国际</li>
+					<li>闪购</li>
+					<li>拍卖</li>
+					<li>金融</li>
+				</ul>
+			</div>
+		</div>
+		<div class="type">
+			<div class="result">
+				<span class="title">全部结果</span>
+				<span class="logo">></span>
+				<strong class="final">“零食”</strong>
+			</div>
+			<div class="contain">
+				<div class="brand">
+					<div class="title">
+						<strong class="inner">品牌：</strong>
+					</div>
+					<div class="value">
+						<ul>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry2.jpg" />
+								</div>
+								<div class="word" title="乐事（lay's）">乐事（lay's）</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry3.jpg" />
+								</div>
+								<div class="word" title="良品铺子">良品铺子</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry4.jpg" />
+								</div>
+								<div class="word" title="三只松鼠（Three Squirrels）">三只松鼠（Three Squirrels）</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry5.jpg" />
+								</div>
+								<div class="word" title="旺旺.">旺旺.</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry6.jpg" />
+								</div>
+								<div class="word" title="卫龙（weilong）">卫龙（weilong）</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry7.jpg" />
+								</div>
+								<div class="word" title="百草味">百草味</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry8.jpg" />
+								</div>
+								<div class="word" title="喜之郎">喜之郎</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry9.jpg" />
+								</div>
+								<div class="word" title="波利（Bonny）">波利（Bonny）</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry10.jpg" />
+								</div>
+								<div class="word" title="口水娃">口水娃</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry11.jpg" />
+								</div>
+								<div class="word" title="好丽友（ORION）">好丽友（ORION）</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry12.jpg" />
+								</div>
+								<div class="word" title="s上好佳">上好佳</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry13.jpg" />
+								</div>
+								<div class="word" title="可比克">可比克</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry14.png" />
+								</div>
+								<div class="word" title="来伊份">来伊份</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry15.jpg" />
+								</div>
+								<div class="word" title="米多奇">米多奇</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry16.jpg" />
+								</div>
+								<div class="word" title="盐津铺子">盐津铺子</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/rqy/ry17.jpg" />
+								</div>
+								<div class="word" title="黄飞红">黄飞红</div>
+							</li>
+							<!--清除浮动，否则ul没有高度-->
+							<div style="clear: both;"></div>
+						</ul>
+					</div>
+					<div class="select">
+						<a href="#" class="s-more">
+							更多
+							<i></i>
+						</a>
+						<a href="#" class="s-mult">
+							多选
+							<i></i>
+						</a>
+					</div>
+				</div>
+				<div class="food" id="le-food">
+					<div class="title">
+						<strong class="inner">休闲食品：</strong>
+					</div>
+					<div class="value">
+						<ul>
+							<li>休闲零食</li>
+							<li>肉干肉脯</li>
+							<li>饼干蛋糕</li>
+							<li>坚果炒货</li>
+							<li>蜜饯果干</li>
+							<li>糖果/巧克力</li>
+							<li>熟食腊味</li>
+							<!--清除浮动，否则ul没有高度-->
+							<div style="clear: both;"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="food" id="i-food">
+					<div class="title">
+						<strong class="inner">进口食品：</strong>
+					</div>
+					<div class="value">
+						<ul>
+							<li>休闲零食</li>
+							<li>饼干蛋糕</li>
+							<li>方便食品</li>
+							<li>糖果/巧克力</li>
+							<li>饮料</li>
+							<li>冲调品</li>
+							<li>米面调味</li>
+							<!--清除浮动，否则ul没有高度-->
+							<div style="clear: both;"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="food" id="drink">
+					<div class="title">
+						<strong class="inner">饮料冲调：</strong>
+					</div>
+					<div class="value">
+						<ul>
+							<li>冲饮谷物</li>
+							<li>饮料</li>
+							<li>咖啡/奶茶</li>
+							<li>成人奶粉</li>
+							<li>蜂蜜/柚子茶</li>
+							<li>牛奶乳品</li>
+							<!--清除浮动，否则ul没有高度-->
+							<div style="clear: both;"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="food" id="condiment">
+					<div class="title">
+						<strong class="inner">粮油调味：</strong>
+					</div>
+					<div class="value">
+						<ul>
+							<li>方便食品</li>
+							<li>南北干货</li>
+							<li>烘焙原料</li>
+							<li>调味品</li>
+							<li>杂粮</li>
+							<li>面</li>
+							<li>米</li>
+							<!--清除浮动，否则ul没有高度-->
+							<div style="clear: both;"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="food" id="s-food">
+					<div class="title">
+						<strong class="inner">营养辅食：</strong>
+					</div>
+					<div class="value">
+						<ul>
+							<li>宝宝零食</li>
+							<li>果泥/果汁</li>
+							<li>清火/开胃</li>
+							<li>米粉/菜粉</li>
+							<li>面条/粥</li>
+							<li>益生菌/初乳</li>
+							<li>钙铁锌/维生素</li>
+							<!--清除浮动，否则ul没有高度-->
+							<div style="clear: both;"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="option" id="option">
+					<div class="title">
+						<div class="inner">高级选项：</div>
+					</div>
+					<div class="value">
+						<ul>
+							<li id="option-fenlei">
+								<span>分类</span>
+								<i></i>
+								<div class="temp"></div>
+								<div class="show">
+									<ul>
+										<li>豆类制品</li>
+										<li>膨化食品</li>
+										<li>果冻布丁</li>
+										<li>果冻布丁</li>
+										<li>果冻布丁</li>
+										<li>果冻布丁</li>
+										<li>果冻布丁</li>
+										<li>果冻布丁</li>
+										<li>果冻布丁</li>
+										<li>果冻布丁</li>
+										<li>果冻布丁</li>
+										<li>果冻布丁</li>
+										<li>果冻布丁</li>
+										<li>果冻布丁</li>
+										<li>果冻布丁</li>
+										<li>果冻布丁</li>
+										<div style="clear: both;"></div>
+									</ul>
+								</div>
+							</li>
+							<li id="option-kouwei">
+								<span>口味</span>
+								<i></i>
+								<div class="temp"></div>
+								<div class="show">
+									<ul>
+										<li>原味</li>
+										<li>香辣味</li>
+										<li>混合口味</li>
+										<li>麻辣口味</li>
+										<li>甜味</li>
+										<li>咸味</li>
+										<li>果味</li>
+										<li>芝麻味</li>
+										<li>椒盐味</li>
+										<li>核桃味</li>
+										<li>牛奶味</li>
+
+										<div style="clear: both;"></div>
+									</ul>
+								</div>
+							</li>
+							<li id="option-guochan">
+								<span>国产/进口</span>
+								<i></i>
+								<div class="temp"></div>
+								<div class="show">
+									<ul>
+										<li>国产</li>
+										<li>进口</li>
+
+										<div style="clear: both;"></div>
+									</ul>
+								</div>
+							</li>
+							<li id="option-baozhuang">
+								<span>包装单位</span>
+								<i></i>
+								<div class="temp"></div>
+								<div class="show">
+									<ul>
+										<li>袋装</li>
+										<li>盒装</li>
+										<li>灌装</li>
+										<li>箱装</li>
+										<li>分享装</li>
+										<li>桶装</li>
+										<li>瓶装</li>
+										<li>其他</li>
+
+										<div style="clear: both;"></div>
+									</ul>
+								</div>
+							</li>
+
+							<div style="clear: both;"></div>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!--商品内容-->
+		<div class="main">
+			<div class="left">
+				<div class="title">
+					<h3>商品精选</h3>
+					<span></span>
+				</div>
+				<div class="content">
+					<ul>
+						<li>
+							<img src="images/rqy/ry23.jpg" />
+							<div class="price">¥79.90</div>
+							<div class="name" onclick="product()">
+								酷兮兮肉类休闲
+								<span>零食</span>大
+								<span>礼包</span>一整箱送女生儿童礼盒豆干美食超市网红辣条好吃的礼物1500g
+							</div>
+							<div class="eva">已有<span>7.7万+</span>人评价</div>
+						</li>
+						<li>
+							<img src="images/rqy/ry24.jpg" />
+							<div class="price">¥14.90</div>
+							<div class="name" onclick="product()">
+								良品铺子 手造
+								<span>麻薯</span>抹茶味糯米糍
+								<span>手工</span>点心糕点休闲食品
+							</div>
+							<div class="eva">已有<span>150万+</span>人评价</div>
+						</li>
+						<li>
+							<img src="images/rqy/ry25.jpg" />
+							<div class="price">¥49.90</div>
+							<div class="name" onclick="product()">
+								酷兮兮休闲
+								<span>零食</span>大
+								<span>礼包</span>一整箱送女生儿童网红美食
+							</div>
+							<div class="eva">已有<span>7.7万+</span>人评价</div>
+						</li>
+						<li>
+							<img src="images/rqy/ry26.jpg" />
+							<div class="price">¥109.90</div>
+							<div class="name" onclick="product()">
+								馋小贝 休闲
+								<span>零食</span>大
+								<span>礼包</span>一整箱送女生儿童网红美食
+							</div>
+							<div class="eva">已有<span>12万+</span>人评价</div>
+						</li>
+						<!--<li>
+							<img src="images/rqy/ry27.jpg" />
+							<div class="price">¥29.90</div>
+							<div class="name">
+								新疆若羌灰枣
+								<span> </span>每斤不到6元
+								<span> </span>小甜枣
+							</div>
+							<div class="eva">已有<span>200+</span>人评价</div>
+						</li>
+						<li>
+							<img src="images/rqy/ry28.jpg" />
+							<div class="price">¥18.00</div>
+							<div class="name">
+								杉城
+								<span> </span>湖南特产网红辣条大
+								<span>礼包</span>麻辣味豆皮老式辣条
+							</div>
+							<div class="eva">已有<span>13万+</span>人评价</div>
+						</li>-->
+					</ul>
+				</div>
+				<img src="images/rqy/ry32.jpg" />
+			</div>
+			<div class="right">
+				<div class="filter">
+					<div class="top">
+						<div class="sort">
+							<a href="#" class="big">综合<span></span></a>
+							<a href="#">销量<span></span></a>
+							<a href="#">评论数<span></span></a>
+							<a href="#">新品<span></span></a>
+							<a href="#">价格<span></span></a>
+						</div>
+						<div class="datagrid">
+							<a href="#" title="8%用户喜欢的价位"><span style="height: 17%;"></span></a>
+							<a href="#" title="32%用户喜欢的价位"><span style="height: 66%;"></span></a>
+							<a href="#" title="41%用户喜欢的价位"><span style="height: 85%;"></span></a>
+							<a href="#" title="13%用户喜欢的价位"><span style="height: 27%;"></span></a>
+							<a href="#" title="6%用户喜欢的价位"><span style="height: 12%;"></span></a>
+						</div>
+						<div class="s-price">
+							<div class="f1">
+								<input type="text" class="input-text" value="¥" style="color: rgb(204,204,204);" />
+							</div>
+							<em>-</em>
+							<div class="f1">
+								<input type="text" class="input-text" value="¥" style="color: rgb(204,204,204);" />
+							</div>
+						</div>
+						<div class="page">
+							<span class="text">
+								<span class="f">1</span>
+								<em>/</em>
+								<span>100</span>
+							</span>
+							<a href="#" class="prev"><</a>
+							<a href="#" class="next" title="使用方向右键也可翻到下一页哦！">></a>
+						</div>
+						<div class="sum">
+							共<span>91万+</span>件商品
+						</div>
+					</div>
+					<div class="bot">
+						<div class="store">
+							<div class="location">配送至</div>
+							<div class="address">重庆市南岸区<b></b></div>
+						</div>
+						<div class="feature">
+							<ul>
+								<li><i></i>京东物流</li>
+								<li><i></i>货到付款</li>
+								<li><i></i>仅显示有货</li>
+								<li><i></i>京东国际</li>
+								<li><i></i>PLUS专享</li>
+								<li class="spe"><i></i>奶爸节</li>
+							</ul>
+						</div>
+						<div class="search">
+							<input type="text" value="在结果中搜索" />
+							<a href="#">确定</a>
+						</div>
+					</div>
+				</div>
+				<div class="goodlist">
+					<ul>
+						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry23.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>79.90</span>
+								</div>
+								<div class="name " onclick="product()">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+									<span title="品质服务，放心购物" class="tips" id="care">放心购</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry33.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>57.90</span>
+								</div>
+								<div class="name" onclick="product()">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+									<span title="品牌持续特卖" class="tips">闪购</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry26.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>79.90</span>
+								</div>
+								<div class="name" onclick="product()">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry27.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>79.90</span>
+								</div>
+								<div class="name" onclick="product()">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry25.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>79.90</span>
+								</div>
+								<div class="name" onclick="product()">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry27.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>79.90</span>
+								</div>
+								<div class="name" onclick="product()">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry28.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>79.90</span>
+								</div>
+								<div class="name" onclick="product()">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry26.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>79.90</span>
+								</div>
+								<div class="name" onclick="product()">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry27.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>79.90</span>
+								</div>
+								<div class="name" onclick="product()">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry50.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>79.90</span>
+								</div>
+								<div class="name" onclick="product()">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry46.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>79.90</span>
+								</div>
+								<div class="name" onclick="product()">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li>
+
+
+						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry47.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>79.90</span>
+								</div>
+								<div class="name" onclick="product()">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li>
+
+
+						<!-- 						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry23.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>79.90</span>
+								</div>
+								<div class="name">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li>
+						
+						
+						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry48.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>79.90</span>
+								</div>
+								<div class="name">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li>
+						
+						
+						<li>
+							<div class="wrap">
+								<img src="images/rqy/ry49.jpg" alt="" />
+								<div class="price">
+									<em>¥</em>
+									<span>79.90</span>
+								</div>
+								<div class="name">
+									<span>京东超市</span> 酷兮兮 肉类休闲
+									<font>零食</font>大
+									<font>礼包</font>
+									一整箱送女朋友儿童礼盒豆干美食品超市网红辣条好物
+								</div>
+								<div class="commit">
+									<a href="#">15万+</a>条评价
+								</div>
+								<div class="seller">
+									<span title="酷兮兮京东自营旗舰店">酷兮兮京东自营旗舰店</span>
+									<b title="联系客服"></b>
+								</div>
+								<div class="icons">
+									<span title="京东自营，品质保障" class="logo">自营</span>
+									<span title="本商品可领用优惠券" class="tips">券199-25</span>
+									<span title="本商品参与满减促销" class="tips">满28-7</span>
+								</div>
+								<div class="operate">
+									<a href="#" class="f1"><i></i>对比</a>
+									<a href="#" class="f2"><i></i>关注</a>
+									<a href="#" class="f3"><i></i>加入购物车</a>
+								</div>
+							</div>
+						</li> -->
+						<!--清除浮动，否则ul没有高度-->
+						<div style="clear: both;"></div>
+					</ul>
+					<!--清除浮动，否则goodlist没有高度-->
+					<div style="clear: both;"></div>
+				</div>
+				<div class="page">
+					<div class="pagebot">
+						<div class="p-num">
+							<a href="#" class="first">
+								<i>
+									<</i> 上一页 </a> <a href="#" class="one">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#">6</a>
+							<a href="#">7</a>
+							<a href="#" class="more">...</a>
+							<a href="#" class="last">
+								下一页
+								<i>></i>
+							</a>
+						</div>
+						<div class="p-skip">
+							<span>共<b>100</b>页&nbsp;&nbsp;到第</span>
+							<input type="text" value="1" />
+							<span>页</span>
+							<a href="#">确定</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--商品精选部分-->
+		<div class="jx">
+			<div class="title">
+				<span>商品精选</span>
+				<b></b>
+			</div>
+			<div class="content">
+				<ul>
+					<li>
+						<img src="images/rqy/ry33.jpg" />
+						<div class="name" onclick="product()">
+							杉城休闲<span>零食</span>大<span>礼包</span>一整箱送女友女友儿童礼盒美食品猪饲料好吃的辣条组合
+						</div>
+						<div class="price">¥88.00</div>
+						<div class="preview">
+							<span>8800+</span>人评价
+						</div>
+					</li>
+					<li>
+						<img src="images/rqy/ry34.jpg" />
+						<div class="name" onclick="product()">
+							盼盼<span> </span>梅尼耶干蛋糕<span> </span>面包干饼干奶香味1000g整箱
+						</div>
+						<div class="price">¥49.90</div>
+						<div class="preview">
+							<span>27万+</span>人评价
+						</div>
+					</li>
+					<li>
+						<img src="images/rqy/ry35.jpg" />
+						<div class="name" onclick="product()">
+							酷兮兮休闲<span>零食</span>大<span>礼包</span>一整箱送女友女友儿童礼盒美食品猪饲料好吃的辣条组合
+						</div>
+						<div class="price">¥99.90</div>
+						<div class="preview">
+							<span>7.7万++</span>人评价
+						</div>
+					</li>
+					<li>
+						<img src="images/rqy/ry36.jpg" />
+						<div class="name" onclick="product()">
+							【汕头馆】鹏发潮汕腐乳饼 广东潮州待产<span>零食</span>小吃传统糕点点心446g腐乳饼
+						</div>
+						<div class="price">¥25.90</div>
+						<div class="preview">
+							<span>1400+</span>人评价
+						</div>
+					</li>
+					<li>
+						<img src="images/rqy/ry37.jpg" />
+						<div class="name" onclick="product()">
+							酷兮兮休闲<span>零食</span>大<span>礼包</span>一整箱送女友女友儿童礼盒美食品猪饲料好吃的辣条组合
+						</div>
+						<div class="price">¥149.00</div>
+						<div class="preview">
+							<span>7.7万+</span>人评价
+						</div>
+					</li>
+					<!--清除浮动，否则ul没有高度-->
+					<div style="clear: both;"></div>
+				</ul>
+			</div>
+		</div>
+
+		<!--底部搜索栏-->
+		<div class="bsearch">
+			<div class="line">
+				<div class="key">您是不是要找：</div>
+				<div class="lines">
+					<ul>
+						<li>零食大礼包</li>
+						<li>自营零食<b>|</b></li>
+						<li>饼干<b>|</b></li>
+						<li>面包<b>|</b></li>
+						<li>薯片<b>|</b></li>
+						<li>牛肉干<b>|</b></li>
+						<li>饮料<b>|</b></li>
+						<li>方便面<b>|</b></li>
+						<li>辣条<b>|</b></li>
+						<li>进口零食<b>|</b></li>
+						<li>牛奶<b>|</b></li>
+						<li>三只松鼠<b>|</b></li>
+						<li>坚果<b>|</b></li>
+						<li>干脆面<b>|</b></li>
+						<!--清除浮动，否则ul没有高度-->
+						<div style="clear: both;"></div>
+					</ul>
+				</div>
+			</div>
+			<div class="sear">
+				<b class="title">重新搜索:</b>
+				<input type="text" value="零食" />
+				<a href="#">搜索</a>
+				<span>说说我使用搜索的感受</span>
+			</div>
+		</div>
+
+		<!--底部猜你喜欢板块-->
+		<div class="like">
+			<div class="title">
+				<span class="word">猜你喜欢</span>
+				<span class="cue">
+					<p></p>换一批
+				</span>
+			</div>
+			<div class="content">
+				<ul>
+					<li>
+						<img src="images/rqy/ry39.jpg" title="三只松鼠玫瑰红葡萄干 蜜饯果干休闲零食新疆特产120g/袋" />
+						<div class="name" onclick="product()">三只松鼠玫瑰红葡萄干 蜜饯果干休闲零食新疆特产120g/袋</div>
+						<div class="preview">（已有109万+人评价）</div>
+						<div class="price">¥19.80</div>
+					</li>
+					<li>
+						<img src="images/rqy/ry27.jpg" title="三只松鼠玫瑰红葡萄干 蜜饯果干休闲零食新疆特产120g/袋" />
+						<div class="name" onclick="product()">三只松鼠玫瑰红葡萄干 蜜饯果干休闲零食新疆特产120g/袋</div>
+						<div class="preview">（已有109万+人评价）</div>
+						<div class="price">¥10.80</div>
+					</li>
+					<li>
+						<img src="images/rqy/ry50.jpg" title="三只松鼠玫瑰红葡萄干 蜜饯果干休闲零食新疆特产120g/袋" />
+						<div class="name" onclick="product()">三只松鼠玫瑰红葡萄干 蜜饯果干休闲零食新疆特产120g/袋</div>
+						<div class="preview">（已有109万+人评价）</div>
+						<div class="price">¥29.90</div>
+					</li>
+					<li>
+						<img src="images/rqy/ry48.jpg" title="三只松鼠玫瑰红葡萄干 蜜饯果干休闲零食新疆特产120g/袋" />
+						<div class="name" onclick="product()">三只松鼠玫瑰红葡萄干 蜜饯果干休闲零食新疆特产120g/袋</div>
+						<div class="preview">（已有109万+人评价）</div>
+						<div class="price">¥13.80</div>
+					</li>
+					<li>
+						<img src="images/rqy/ry25.jpg" title="三只松鼠玫瑰红葡萄干 蜜饯果干休闲零食新疆特产120g/袋" />
+						<div class="name" onclick="product()">三只松鼠玫瑰红葡萄干 蜜饯果干休闲零食新疆特产120g/袋</div>
+						<div class="preview">（已有109万+人评价）</div>
+						<div class="price">¥50.20</div>
+					</li>
+					<!--清除浮动，否则ul没有高度-->
+					<div style="clear: both;"></div>
+				</ul>
+			</div>
+		</div>
+
+		<!--底部广告-->
+		<div class="adver">
+			<img src="images/rqy/ry40.jpg" />
+		</div>
+
+
+		<!--右侧悬浮栏-->
+ 		<div class="stool">
+			<div class="stoolbar" id="stoolbar1">
+				<div class="bar1">
+					<i></i>
+					<em>京东会员</em>
+				</div>
+				<div class="bar2">
+					<i></i>
+					<em>购物车</em>
+				</div>
+				<div class="bar3">
+					<i></i>
+					<em>我的消息</em>
+				</div>
+			</div>
+			<div class="stoolbar" id="stoolbar2">
+				<div class="bar1">
+					<i></i>
+					<em></em>
+					<div class="ma">
+						<p>去APP上探索你查找的物品</p>
+						<img src="images/rqy/ry45.png" alt="" />
+					</div>
+				</div>
+				<div class="bar2">
+					<i></i>
+					<a href="#top"></a>
+					<em>顶部</em>
+				</div>
+				<div class="bar3">
+					<i></i>
+					<em>反馈</em>
+				</div>
+			</div>
+		</div>
+
+		<!--底部公共部分-->
+		<div id="footer">
+			<script type="text/javascript">
+				$("#footer").load("bottom.html");
+			</script>
+		</div>
+	</body>
+	</div>
+	</div>
+	</div>
+	<script type="text/javascript">
+		function product() {
+			window.location.href = 'product.html';
+		}
+	</script>
+</html>

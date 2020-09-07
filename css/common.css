@@ -1,0 +1,31 @@
+/*
+*日期：2020/08/03
+*名称：公共css样式
+*作者：fzw
+*备注：无
+*/
+
+.pa{position: absolute;}
+.pr{position: relative;}
+
+.fl{float: left;}
+.fr{float: right;}
+
+.mT3{margin-top: 3px;}
+.mT10{margin-top: 10px;}
+
+.mL8{margin-left: 8px;}
+
+.mR5{margin-right: 5px;}
+.mR10{margin-right: 10px;}
+
+.disNo{display: none;}
+
+.cle:after{
+	clear: both;
+	content: '.';
+	display: block;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}

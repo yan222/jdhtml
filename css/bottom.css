@@ -1,0 +1,182 @@
+/* @charset 'utf-8'; */
+body,
+div,
+ul,
+li,
+dt,
+dd,
+dl,
+a {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+li,
+ul {
+	list-style: none;
+}
+
+.wrap {
+	width: 1210px;
+	margin: 0 auto;
+}
+
+body {
+	width: 1366px;
+	font: 12px/150% Arial, Verdana;
+	color: #666;
+	width: 100%;
+}
+
+footer .dkhs {
+	position: relative;
+	height: 50px;
+	padding: 20px 0;
+	margin-bottom: 0px;
+	background: #f4f4f4;
+	border-bottom: 1px solid #dedede;
+}
+
+footer .dkhs ul li {
+	float: left;
+	margin-right: 80px;
+	margin-left: 20px;
+	width: 220px;
+	height: 54px;
+}
+
+footer .dkhs ul .lid {
+	background: url(../images/service_items_1.png) no-repeat;
+}
+
+footer .dkhs ul .lik {
+	background: url(../images/service_items_2.png) no-repeat;
+}
+
+footer .dkhs ul .lih {
+	background: url(../images/service_items_3.png) no-repeat;
+}
+
+footer .dkhs ul .lis {
+	background: url(../images/service_items_4.png) no-repeat;
+	margin-right: 0;
+}
+
+footer .help {
+	height: 200px;
+	margin-bottom: 0px;
+	background: #F5F5F5;
+}
+
+footer .help dl {
+	float: left;
+	width: 199px;
+}
+
+footer .help dl dt {
+	padding: 10px 0;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+footer .help dl a {
+	color: #666;
+	text-align: left;
+	padding: 4px 0;
+	display: block;
+}
+
+footer .help dl a:hover {
+	color: #C81623;
+}
+
+footer .help dl:nth-child(5) {
+	width: 100px;
+}
+
+footer .cover {
+	float: left;
+	width: 310px;
+	height: 168px;
+	background-position: 60px -131px;
+}
+
+footer .cover dt {
+	padding: 10px 40px 10px 80px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+footer .cover dd {
+	padding: 0 40px 15px 80px;
+}
+
+footer .cover dd a {
+	color: #666;
+	display: block;
+	width: 100%;
+	text-align: right;
+}
+
+footer .cover dd a:hover {
+	color: #C81623;
+}
+
+footer .foot {
+	border-top: 1px solid #e5e5e5;
+	padding: 20px 0 30px;
+	text-align: center;
+}
+
+footer .foot a {
+	margin: 0 15px;
+	color: #666;
+}
+
+footer .foot a:hover {
+	color: #C81623;
+}
+
+footer .foot .links {
+	color: #666;
+}
+
+footer .foot .links a {
+	margin: 0 10px;
+}
+
+footer .foot .links a img {
+	vertical-align: middle;
+}
+
+footer .foot .copy {
+	margin: 10px 0;
+	padding: 4px 0;
+	color: #999;
+}
+
+footer .foot .copy a {
+	color: #999;
+}
+
+footer .foot .copy a:hover {
+	color: #C81623;
+}
+
+footer .foot .web{
+	width: 1190px;
+	height: 36px;
+	margin: 25px 0;
+}
+
+footer .foot .web a {
+	margin: 0 5px;
+}

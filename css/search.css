@@ -1,0 +1,270 @@
+*{margin: 0;padding: 0;}
+body{font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;color: #666;background: #fff;overflow-x:hidden;}
+a{text-decoration: none;}
+ul li{list-style: none;}
+
+/*顶部搜索栏*/
+.header{width: 1210px;height: 87px; margin: 0 auto;}
+.header .logo{float: left;cursor: pointer; width: 134px;height: 42px;margin: 17px 142px 22px 0;background: url(../images/rqy/ry_jingdong.png)no-repeat;}
+.header .search{float: left;width: 536px;height: 40px;margin: 27px 30px 0 95px;}
+.header .search .form{width: 536px;height: 40px;position: relative;}
+.header .search .form input{float: left;width: 406px;height: 24px;line-height: 24px;padding: 4px 44px 4px 4px;margin-bottom: 4px;border-width: 2px 0 2px 2px;border-color: #f30213;border-style: solid;font-size: 12px;color: #999;}
+.header .search .form .searchlogo{position: absolute; right: 95px;top: 10px;width: 19px;height: 15px;background: url(../images/rqy/rysearch.png)no-repeat;}
+.header .search .form .searchlogo:hover{background-position: -30px 0;}
+.header .search .form .searchbutton{float: left;width: 80px;height: 36px;background: #F30213;line-height: 1;font-size: 16px;border: none; cursor: pointer;color: #fff;}
+.header .dropdown{position: relative; width: 140px;height: 36px;float: left;margin-top: 27px;border: 1px solid #DFDFDF;background: #F9F9F9;}
+.header .dropdown:hover{background: #fff;box-shadow: 0 0 5px rgba(0,0,0,.2);}
+.header .dropdown .dropdowncar{position: relative; width: 91px;height: 34px;line-height: 34px;color: #f30213;padding: 0 28px 0 19px;}
+.header .dropdown .dropdowncar i{position: absolute;left: 90px;top: 10px;}
+.header .dropdown .dropdowncar span{position: absolute;left: 105px;top: 9px;padding: 1px;font-size: 12px;line-height: 14px;color: #fff;background-color: #da1026;border-radius: 7px;font-family: tahoma,arial;text-align: center;min-width: 14px;}
+.header .dropdown .show{z-index: 10; position: absolute;display: none;right: -1px; padding: 10px 15px;width: 278px;height: 49px;border: 1px solid #ddd;background: #fff;box-shadow: 0 0 5px rgba(0,0,0,.2);}
+.header .dropdown:hover .show{display: block;}
+.header .dropdown .show .content{width: 248px;height: 49px;line-height: 49px; padding-left: 30px;color: #999;}
+.header .dropdown .show .content .img{float: left;width: 56px;height: 49px;background: url(../images/rqy/ry1.png);}
+.header .dropdown .line{display: none; width: 140px;height: 10px;position: absolute;top: 30px;background: #fff;}
+.header .dropdown:hover .line{display: block;}
+.header .list{z-index: 5; position: absolute;top: 100px;left: 439px; width: 705px;height: 20px;line-height: 20px;}
+.header .list ul li{float: left;color:#999;cursor: pointer;}
+.header .list ul li:hover{color: #F30213;}
+.header .list ul b{float: left;width: 21px;font: 12px/20px "Helvetica Neue","Hiragino Sans GB",SimSun,serif;color: #ccc;text-align: center;}
+
+
+/*商品分类*/
+.type-top{height: 33px;margin-top: 10px;border-bottom: 2px solid #f30213;}
+.type-top .inner{width: 1210px;height: 33px;line-height: 33px;margin: 0 auto;}
+.type-top .inner ul li{float: left;height: 33px;padding: 0 22px;text-align: center;font-size: 14px;font-weight: 700;cursor: pointer;}
+.type-top .inner ul li:hover{color: #f30213;}
+.type-top .inner #allgoods{background: #f30213;color: #fff;width: 170px;}
+.type-top .inner #allgoods:hover{background: #f30213;color: #fff;}
+.type{width: 1210px;margin: 0 auto;margin-bottom: 20px;}
+.type .result{padding-top: 15px;margin-bottom:5px;height: 29px;line-height: 29px;}
+.type .result span{margin: 0 5px 5px 0;float: left;}
+.type .result .title:hover{color: #F30213;cursor: pointer;}
+.type .contain{width: 1210px;height: 331px;border-top: 1px solid #DDD;margin-bottom: 10px;background: #FFF;}
+.type .contain .brand{position: relative;border-bottom: 1px solid #DDD;line-height: 34px;height: 120px;}
+.type .contain .brand .title{background: #f3f3f3;float: left;width: 100px;height: 120px;}
+.type .contain .brand .title .inner{float: left;width: 100px;padding-left: 10px;}
+.type .contain .brand .value{padding: 0 130px 0 10px;margin-left: 110px;}
+.type .contain .brand .value ul{padding-top: 10px;margin-bottom: 10px;}
+.type .contain .brand .value ul li{position: relative; float: left;cursor: pointer; width: 114px;height: 48px;border: 1px solid #DDD;margin: -1px -1px 0 0;}
+.type .contain .brand .value ul li img{width: 102px;height: 36px;margin: 5px 6px;}
+.type .contain .brand .value ul li:hover img{display: none;}
+.type .contain .brand .value ul li .word{display: none; position: absolute;top: 0;left: -1px; width: 113px;height: 46px;text-align: center; border: 1px solid #e4393c;color: #e4393c;line-height: 48px;}
+.type .contain .brand .value ul li:hover .word{display: block;}
+.type .contain .brand .select{position: absolute;top: 5px;right: 10px;width: 110px;}
+.type .contain .brand .select .s-more{position: relative; float: left;margin-right: 10px;width: 39px;height: 23px;line-height: 23px;padding: 0 7px 0 4px;color: #333;border: 1px solid #ddd;}
+.type .contain .brand .select .s-more i{position: absolute;top: 1px;right: 2px;width: 20px;height: 20px;background: url(../images/rqy/ry20.png)4px 7px;transition: background-position .15s ease-in-out;}
+.type .contain .brand .select .s-more:hover{color: #e4393c;}
+.type .contain .brand .select .s-more:hover i{background-position: 4px -11px;}
+.type .contain .brand .select .s-mult{position: relative;color: #333; float: left;height: 23px;line-height: 23px;border: 1px solid #DDD;padding: 0 3px 0 18px;}
+.type .contain .brand .select .s-mult i{position: absolute;left: 3px;top: 1px;width: 13px;height: 20px;background: url(../images/rqy/ry20.png)0 -63px;transition: background-position .15s ease-in-out;}
+.type .contain .brand .select .s-mult:hover{color: #e4393c;}
+.type .contain .brand .select .s-mult:hover i{background-position: 0 -84px;}
+.type .contain .food{width: 1210px;height: 35px;line-height: 35px;border-bottom: 1px solid #DDD;}
+.type .contain .title{float: left; width: 100px;padding-left: 10px;background: #F3F3F3;}
+.type .contain .food .value{float: left;padding-right:130px;padding-left: 10px;}
+.type .contain .food .value ul li{float: left;width: 130px;height: 26px;margin: 0 5px 4px 0;cursor: pointer;color: #005aa0;}
+.type .contain .food .value ul li:hover{color: #e4393c;}
+.type .contain .option{width: 1210px;height: 35px;border-bottom: 1px solid #DDD;line-height: 35px;}
+.type .contain .option .value{width: 1260px;height: 25px;padding: 5px 10px;margin-left: 110px;}
+.type .contain .option .value ul li{z-index: 15;position: relative; float: left;height: 23px;cursor: pointer; line-height: 23px;padding: 0 3px 0 6px;border: 1px solid #ddd;margin-right: 15px;color: #005aa0;}
+.type .contain .option .value ul li:hover{border-color: #999;}
+.type .contain .option .value ul li i{width: 20px;height: 20px;background: url(../images/rqy/ry20.png)4px 7px;float: right;}
+.type .contain .option .value ul li:hover i{background-position:4px -27px;}
+.type .contain .option .value ul li .temp{display:none; height:10px;background:#fff;position:absolute;left:0;top:22px;width:53px;z-index:10}
+.type .contain .option .value ul li .show{display:none; z-index:5; width:1188px;padding:10px;border: 1px solid #999;position:absolute;left:-121px;top:22px;background:#fff;}
+.type .contain .option .value ul li .show ul li{height:26px;line-height:26px;margin:0 50px 4px 0;border:none;}
+.type .contain .option .value ul li .show ul li:hover{color:#e4393c}
+.type .contain .option .value ul #option-fenlei:hover .show{display:block;}
+.type .contain .option .value ul #option-fenlei:hover .temp{display:block;}
+.type .contain .option .value ul #option-kouwei .show{left:-191px;}
+.type .contain .option .value ul #option-kouwei:hover .show{display:block;}
+.type .contain .option .value ul #option-kouwei:hover .temp{display:block;}
+.type .contain .option .value ul #option-guochan .show{left:-261px;}
+.type .contain .option .value ul #option-guochan:hover .show{display:block;}
+.type .contain .option .value ul #option-guochan .temp{width:80px;}
+.type .contain .option .value ul #option-guochan:hover .temp{display:block;}
+.type .contain .option .value ul #option-baozhuang .show{left:-358px;}
+.type .contain .option .value ul #option-baozhuang:hover .show{display:block;}
+.type .contain .option .value ul #option-baozhuang .temp{width:77px;}
+.type .contain .option .value ul #option-baozhuang:hover .temp{display:block;}
+
+
+
+/*商品内容*/
+.main{z-index: 5; width: 1210px;margin: 0 auto; margin-bottom: 10px;}
+.main .left{width: 178px;border: solid 1px #ddd;margin-bottom: 10px;float: left;}
+.main .left .title{line-height: 36px;padding-left: 10px;margin-bottom: 10px;position: relative;}
+.main .left .title span{position: absolute;right: 10px;top: 10px;width: 20px;height: 11px;background: url(../images/rqy/ry21.gif);}
+.main .left .content{width: 178px;}
+.main .left .content ul li{padding: 0 9px;margin-bottom: 20px;}
+.main .left .content ul li img{width: 160px;height: 160px;margin-bottom: 10px;cursor: pointer;}
+.main .left .content ul li .price{width: 140px;height: 20px;padding: 0 10px;margin-bottom: 8px;color: #e4393c;font-size: 14px;font-weight: 400;font-family: Verdana;}
+.main .left .content ul li .name{cursor: pointer;width: 140px;height: 36px;padding: 0 10px;line-height: 18px;overflow: hidden;}
+.main .left .content ul li .name:hover{color: #f30213;}
+.main .left .content ul li .name span{color: #e4393c;}
+.main .left .content ul li .eva{width: 140px;padding: 8px 10px 0;}
+.main .left .content ul li .eva span{color: #005aa0;}
+.main .left img{margin-top: 10px; width: 180px;}
+.main .right{position: relative; margin-left: 190px;padding-bottom: 30px;}
+.main .right .filter{position: relative;width: 1200p;height: 76px;border-top: 1px solid #DDD;margin-bottom: 5px;}
+.main .right .filter .top{height: 25px;padding: 6px 8px;border-bottom: solid 1px #E7E3E7;background: #F1F1F1;}
+.main .right .filter .top .sort{float: left;margin-right: 13px;}
+.main .right .filter .top .sort a{float: left;padding: 0 9px;height: 23px;line-height: 23px; border: 1px solid #CCC;margin-right: -1px;background: #FFF;color: #333;}
+.main .right .filter .top .sort a span{float:right; width: 7px;height: 11px; margin:6px 0 0 5px;background: url(../images/rqy/ry30.png)no-repeat 0 -100px;}
+.main .right .filter .top .sort a:hover{color: #e4393c;border-color: #e4393c;margin: 0;}
+.main .right .filter .top .sort a:hover span{background-position: 0 -140px;}
+.main .right .filter .top .sort .big{background: #e4393c;border-color: #e4393c;color: #fff;}
+.main .right .filter .top .sort .big:hover{background: #e4393c;border-color: #e4393c;color: #fff;}
+.main .right .filter .top .sort .big span{background-position: 0 -120px;}
+.main .right .filter .top .sort .big:hover span{background-position: 0 -120px;}
+.main .right .filter .top .datagrid{float: left;width: 71px;height: 25px;padding-left: 1px;margin-right: 12px;background: #fff;}
+.main .right .filter .top .datagrid a{position: relative;float: left;width: 13px;height: 23px; border: 1px solid #ccc;margin-left: -1px;background: #fff;}
+.main .right .filter .top .datagrid a span{position: absolute;left: -1px;bottom: -1px;width: 13px;border: 1px solid #aaa;background: #e5e5e5;}
+.main .right .filter .top .datagrid a:hover span{background: #f89596;border-color: #e4393c;}
+.main .right .filter .top .s-price{position: relative;float: left;width: 132px;height: 25px;margin-right: 12px;}
+.main .right .filter .top .s-price div{float: left;}
+.main .right .filter .top .s-price input{width: 52px;height: 17px;padding: 3px;border: 1px solid #CCC;line-height: 17px;}
+.main .right .filter .top .s-price em{float: left; width: 12px;line-height: 23px;color: #333;text-align: center;}
+.main .right .filter .top .page{float: right;}
+.main .right .filter .top .page .text{line-height: 23px;margin-right: 10px;font-family: verdana;float: left;}
+.main .right .filter .top .page .text .f{color: #E4393C;}
+.main .right .filter .top .page a{width: 46px;height: 23px;line-height: 23px;border: 1px solid #DDD;color: #CCC;float: left;text-align: center;}
+.main .right .filter .top .page .prev{background: #f1f1f1;cursor: default;}
+.main .right .filter .top .page .next{background: #fff;}
+.main .right .filter .top .sum{float: right;height: 25px;line-height: 25px;margin-right: 10px;color: #999;}
+.main .right .filter .top .sum span{color: #666;font-family: verdana;}
+.main .right .filter .bot{height: 25px;padding: 6px 8px;border-bottom: 1px solid #E7E3E7;background: #F9F9F9;}
+.main .right .filter .bot .store{float: left;padding-left: 5px;}
+.main .right .filter .bot .store .location{color: #999;float: left;line-height: 25px;margin-right: 5px;}
+.main .right .filter .bot .store .address{float: left;margin-right: 10px;height: 26px;line-height: 26px; position: relative;padding: 0 24px 0 4px;background: #fff;border: 1px solid #CECBCE;}
+.main .right .filter .bot .store .address b{position: absolute;top: 3px;right: 4px;width: 17px;height: 17px;background: url(../images/rqy/ry20.png)3px 5px;}
+.main .right .filter .bot .feature{float: left;height: 25px;}
+.main .right .filter .bot .feature ul li{position: relative; float: left;height: 25px;line-height: 25px;padding: 0 5px 0 18px;cursor: pointer;}
+.main .right .filter .bot .feature ul li:hover{color: #e4393c;}
+.main .right .filter .bot .feature ul li i{position: absolute;left: 0;top: 5px;height: 12px;width: 12px;background-color: #fff;border: 1px solid #ccc;}
+.main .right .filter .bot .feature ul li:hover i{border-color: #e4393c;}
+.main .right .filter .bot .feature ul .spe{color: #e4393c;font: 700 14px/25px "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei",sans-serif;}
+.main .right .filter .bot .search{float: right;}
+.main .right .filter .bot .search input{width: 108px;color: #999;float: left;height: 17px;padding: 3px;border: 1px solid #CCC;}
+.main .right .filter .bot .search a{float: left;margin-left: -1px;border: 1px solid #CCC;color: #333;cursor: pointer;height: 14px;line-height: 14px;background: #F7F7F7;text-align: center;padding: 4px 13px 5px;}
+.main .right .goodlist{margin-bottom: 20px;width:1020px}
+.main .right .goodlist ul{width: 1040px;}
+.main .right .goodlist ul li{height: 474px; float: left;margin-top: 10px;margin-right:20px}
+.main .right .goodlist ul li .wrap{width: 220px; padding: 38px 9px 10px;border: 1px solid #fff;}
+.main .right .goodlist ul li .wrap:hover{border-color: #e9e9e9;box-shadow: 0 0 2px 2px #f8f8f8;}
+.main .right .goodlist ul li .wrap img{width: 220px;height: 220px;margin-bottom: 15px;cursor: pointer;}
+.main .right .goodlist ul li .wrap .price{width: 220px;height: 22px;line-height: 22px;margin-bottom: 8px;overflow: hidden;color: #e4393c;font-size: 20px;font-weight: 400;font-family: Verdana;}
+.main .right .goodlist ul li .wrap .price em{font-size: 16px;font-style: normal;}
+.main .right .goodlist ul li .wrap .price span{margin-left: -7px;}
+.main .right .goodlist ul li .wrap .name{height: 40px;width: 220px;overflow: hidden;margin-bottom: 8px;cursor: pointer;line-height: 20px;}
+.main .right .goodlist ul li .wrap .name span{float: left;height: 16px;line-height: 16px; margin: 2px 3px 0 0;color: #fff;border-radius: 2px;background-color: #c81623;padding: 0 3px;}
+.main .right .goodlist ul li .wrap .name font{color: #e4393c;}
+.main .right .goodlist ul li .wrap .name:hover{color: #f30213;}
+.main .right .goodlist ul li .wrap .commit{height: 18px;margin-bottom: 9px;margin-top: -3px;}
+.main .right .goodlist ul li .wrap .commit a{color: #646fb0;font-family: verdana;font-weight: 700;cursor: pointer;}
+.main .right .goodlist ul li .wrap .seller{height: 18px;line-height: 18px;margin-top: -3px;margin-bottom: 9px;}
+.main .right .goodlist ul li .wrap .seller span{float: left; color: #999;max-width: 122px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap; display: inline-block;height: 18px;cursor: pointer;}
+.main .right .goodlist ul li .wrap .seller b{float: left; width: 16px;height: 16px; cursor: pointer;margin-left: 5px; background: url(../images/rqy/ry31.png)no-repeat;}
+.main .right .goodlist ul li .wrap .icons{height: 16px;margin-bottom: 12px;font-family: "Helvetica Neue","Hiragino Sans GB",SimSun,serif;}
+.main .right .goodlist ul li .wrap .icons .logo{float: left;height: 16px;line-height: 16px;margin-right: 3px;padding: 0 3px;text-align: center;font-size: 12px;color: #FFF;cursor: default;border-radius: 2px;background: #e23a3a;}
+.main .right .goodlist ul li .wrap .icons .tips{float: left;height: 14px;line-height: 14px;padding: 0 3px;border: 1px solid #e23a3a;margin-right: 3px;text-align: center;font-size: 12px;border-radius: 2px;color: #e23a3a;}
+.main .right .goodlist ul li .wrap .icons #care{border-color: #4d88ff;color: #4d88ff;}
+.main .right .goodlist ul li .wrap .operate{margin-bottom: 10px;height: 27px;}
+.main .right .goodlist ul li .wrap .operate a{position: relative;color: #999; float: left;height: 25px;line-height: 25px;border: 1px solid #DDD;padding: 0 3px 0 24px;}
+.main .right .goodlist ul li .wrap .operate a:hover{color: #E4393C;border-color: #e4393c;}
+.main .right .goodlist ul li .wrap .operate .f1{width: 28px;}
+.main .right .goodlist ul li .wrap .operate .f1 i{position: absolute;left: 5px;top: 5px;height: 12px;width: 12px;border: 1px solid #ccc;}
+.main .right .goodlist ul li .wrap .operate .f1:hover i{border-color: #e4393c;}
+.main .right .goodlist ul li .wrap .operate .f2 i{position: absolute;left: 4px;top: 3px;width: 18px;height: 18px;background: url(../images/rqy/ry20.png)0 -413px;transition: background-position .15s ease-in-out;}
+.main .right .goodlist ul li .wrap .operate .f2:hover i{background-position: 0 -436px;}
+.main .right .goodlist ul li .wrap .operate .f3{color: #e4393c;}
+.main .right .goodlist ul li .wrap .operate .f3 i{position: absolute;left: 4px;top: 3px;width: 18px;height: 18px;background: url(../images/rqy/ry20.png)0 -272px;}
+.main .right .page{margin-bottom: 10px;}
+.main .right .page .pagebot{height: 38px;float: right;}
+.main .right .page .pagebot .p-num{float: left;}
+.main .right .page .pagebot .p-num a{float: left;height: 36px;line-height: 36px;padding: 0 14px;margin-right: 5px;font-size: 14px;color: #333;border: 1px solid #ddd;background-color: #f7f7f7;}
+.main .right .page .pagebot .p-num .first{cursor: default;background: #fff;color: #ccc;}
+.main .right .page .pagebot .p-num  i{font-family: "\5b8b\4f53";font-size: 16px;font-style: normal;}
+.main .right .page .pagebot .p-num .one{border: none;color: #e4393c;background-color: #FFFFFF;}
+.main .right .page .pagebot .p-num .more{color: #ccc;border: none;background-color: #fff;}
+.main .right .p-skip{float: left;margin-left: 20px;}
+.main .right .p-skip span{float: left;line-height: 38px;font-size: 14px;}
+.main .right .p-skip input{float: left;width: 30px;height: 30px;margin: 0 3px;line-height: 30px;font-size: 14px;text-align: center;border: 1px solid #CCC;padding: 3px;}
+.main .right .p-skip a{float: left;height: 27px;line-height: 27px;font-size: 14px;margin-left: 10px;border: 1px solid #DDD;padding: 4px 13px 5px;color: #666;background-color: #f7f7f7;}
+
+
+/*商品精选*/
+.jx{width: 1210px;height: 341px;margin: 0 auto;margin-top: 40px;border: 1px solid #ddd;margin-bottom: 10px;}
+.jx .title{position: relative; height: 21px;line-height: 21px;padding: 6px;}
+.jx .title span{font-weight: 400;font-size: 14px;font-family: "microsoft yahei";}
+.jx .title b{position: absolute;right: 10px;top: 10px;width: 22px;height: 11px;background: url(../images/rqy/ry21.gif);}
+.jx .content{height: 306px;width:1208px;}
+.jx .content ul{padding-left:26px}
+.jx .content ul li{float: left; padding: 0 26px 20px 0;width: 210px;height: 286px;}
+.jx .content ul li img{cursor: pointer; width: 190px;height: 190px;padding: 0 10px;margin-bottom: 10px;}
+.jx .content ul li .name{cursor: pointer; height: 36px;line-height: 18px;margin-bottom: 12px;overflow: hidden;}
+.jx .content ul li .name:hover{color: #f30213;}
+.jx .content ul li .name span{color: #e4393c;}
+.jx .content ul li .price{height: 16px;line-height: 16px;margin-bottom: 4px;color: #E4393C;font-weight: 700;font-size: 14px;font-family: verdana;}
+.jx .content ul li .preview{color: #999;}
+.jx .content ul li .preview span{color: #005aa0;}
+
+
+/*底部搜索栏*/
+.bsearch{width: 1168px;height: 74px;padding: 15px 0 20px 40px;margin: 0 auto; margin-bottom: 10px;background: #F9F9F9;border: 1px solid #DDD;}
+.bsearch .line{height: 28px;line-height: 28px; margin-bottom: 10px;}
+.bsearch .line .key{color: #333;float: left;}
+.bsearch .line .lines ul li{float: left;color: #005aa0;}
+.bsearch .line .lines ul li:hover{cursor: pointer;}
+.bsearch .line .lines ul li b{float: left;width: 20px;font: 12px/28px "Helvetica Neue","Hiragino Sans GB",SimSun,serif;color: #CCC;text-align: center;}
+.bsearch .line .lines ul li:hover b{cursor: auto;}
+.bsearch .sear .title{width: 88px;color: #333;float: left;height: 28px;line-height: 28px;}
+.bsearch .sear input{float: left; width: 400px;height: 28px;line-height: 28px;font-size: 14px;border: 1px solid #CCC;padding: 3px;}
+.bsearch .sear a{float: left; width: 40px; height: 25px;line-height: 25px;padding: 5px 15px 6px; margin-left: 7px;font-size: 14px;font-weight: bolder;color: #FFF;background-color: #E74649;text-align: center;}
+.bsearch .sear span{color: #005aa0;margin-left: 20px;line-height: 28px;cursor:pointer;}
+
+
+/*猜你喜欢板块*/
+.like{width: 1190px;padding: 0 9px;border: 1px solid #ddd;border-top: 2px solid #999;margin: 0 auto;}
+.like .title{height: 30px;line-height: 30px;}
+.like .title .word{float: left;font: 14px/30px "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei",sans-serif;}
+.like .title .cue{float: right;cursor: pointer;}
+.like .title .cue:hover{color: #E4393C;}
+.like .title .cue p{width: 16px;height: 16px;margin-right: 5px;background: url(../images/rqy/ry38.png);float: left;margin-top: 7px;}
+.like .content{height: 231px;padding-top: 15px;}
+.like .content ul li{width: 150px;height: 216px;float: left;margin-right: 8px;padding: 0 18px 15px;text-align: center;}
+.like .content ul li img{width: 130px;height: 130px;padding: 0 10px;}
+.like .content ul li .name{height: 36px;line-height: 18px; color: #666;overflow: hidden;cursor: pointer;}
+.like .content ul li .name:hover{color: #f30213;}
+.like .content ul li .preview{line-height: 20px;color: #005ea7;cursor: pointer;}
+.like .content ul li .price{line-height: 20px;color: #e3393c;}
+
+
+/*底部广告*/
+.adver{width: 1210px;height: 125px;margin: 0 auto;}
+.adver img{margin-top: 10px;width:1210px}
+
+
+/*右侧悬浮栏*/
+.stool{position:fixed;right: 0;top: 0;height: 100%;border-right: 6px solid #7a6e6e;z-index:10}
+.stool .stoolbar{position: absolute;left: -29px;width: 35px;height: 108px;}
+.stool #stoolbar1{top: 50%;}
+.stool #stoolbar2{bottom: -1px;}
+.stool .stoolbar div{position: relative;height: 35px;margin-bottom: 1px;cursor: pointer;background-color: #7a6e6e;border-radius: 3px 0 0 3px;}
+.stool .stoolbar div i{background: url(../images/rqy/ry42.png);width: 34px;height: 35px;position: absolute;}
+.stool .stoolbar div em{display: none; left: -60px;position: absolute; background-color: #c81623;width: 62px;height: 35px;line-height: 35px;text-align: center;font-family: 微软雅黑;font-style: normal; color: #fff;border-radius: 3px 0px 0px 3px;transition: left 0.3s ease-in-out 0.1s;}
+.stool .stoolbar div:hover{background-color: #c81623;}
+.stool .stoolbar div:hover em{display: block;}
+.stool #stoolbar1 .bar1 i{background-position: -88px -175px;}
+.stool #stoolbar1 .bar2 i{background-position: -50px 0;}
+.stool #stoolbar1 .bar3 i{background-position: -190px -150px;}
+.stool #stoolbar2 .bar1 i{background:url(../images/rqy/ry43.png) -3px 0;}
+.stool #stoolbar2 .bar2 i{background-position: -50px -250px;}
+.stool #stoolbar2 .bar3 i{background-position: -50px -300px;}
+.stool #stoolbar2 .bar1 .ma{display: none; position: absolute;left: -123px;bottom: 0;padding: 8px 10px;width: 100px;height: 140px;background: #e4393c;border-radius: 4px;font-size: 14px;line-height: 16px;color: #FFF;text-align: center;}
+.stool #stoolbar2 .bar1 .ma p{margin-bottom: 6px;}
+.stool #stoolbar2 .bar1:hover .ma{display: block;}
+.stool #stoolbar2 .bar2 a{position: absolute;width: 34px;height: 35px;}/*点击回到顶部*/
+
+#footer{background: #eaeaea;}
